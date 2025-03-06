@@ -74,8 +74,19 @@ if (nummer <= 10) {
     console.log("The number is between 10 and 100.");
 }
 
-// Type Alias
+//Type Alias
 type PersonInfoType = string | number;
 
-const personNameInfo: PersonInfoType = "Ivan";
+const personNameInf: PersonInfoType = "Ivan";
 const personAgeInf: PersonInfoType = 25;
+
+type Status = "approved" | "rejected" | "pending" | "fullfiled";
+
+const currentStatus: Status = "fullfiled";
+
+type PersonData = {
+  name: string;
+  lastName: string;
+  age: number;
+  city: "Sofia" | "Plovdiv" | "Varna";
+};
